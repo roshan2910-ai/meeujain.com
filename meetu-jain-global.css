@@ -1,0 +1,614 @@
+
+/* Meetu Jain global visual system */
+:root { --mj-ink:#101b2b; --mj-gold:#b58b4b; --mj-cream:#f5f0e7; }
+html { scroll-behavior:smooth; }
+body {
+  background: linear-gradient(135deg,rgba(7,16,29,.66),rgba(10,19,31,.46) 48%,rgba(7,14,24,.68)), url("https://res.cloudinary.com/tvnnb7i2/image/upload/v1795500590/Rashtrapati_Bhavan__Past_Meets_Present.png") center center / cover fixed no-repeat !important;
+  background-attachment:fixed !important;
+}
+.mj-header { position:sticky; top:0; z-index:5000; background:rgba(250,248,244,.94)!important; backdrop-filter:blur(16px); border-bottom:1px solid rgba(181,139,75,.35); box-shadow:0 8px 28px rgba(0,0,0,.12); }
+.mj-header-inner { width:min(1320px,92%); min-height:92px; margin:auto; display:flex; align-items:center; justify-content:space-between; gap:24px; }
+.mj-brand { display:flex; align-items:center; flex:0 0 auto; }
+.mj-brand img { display:block; width:clamp(230px,25vw,340px); height:auto; }
+.mj-nav { display:flex; align-items:center; justify-content:flex-end; gap:clamp(14px,2vw,30px); }
+.mj-nav > a,.mj-dropdown-toggle { color:#152238; font:700 12px/1.2 Inter,Arial,sans-serif; letter-spacing:1px; text-transform:uppercase; text-decoration:none; padding:15px 0; background:none; border:0; cursor:pointer; white-space:nowrap; }
+.mj-nav > a:hover,.mj-dropdown-toggle:hover { color:#a77a38; }
+.mj-dropdown,.mj-submenu { position:relative; }
+.mj-dropdown-toggle span { color:#a77a38; margin-left:4px; }
+.mj-dropdown-menu,.mj-submenu-menu { display:none; position:absolute; min-width:220px; background:rgba(255,253,249,.98); border:1px solid rgba(181,139,75,.3); box-shadow:0 16px 35px rgba(0,0,0,.18); padding:8px; border-radius:8px; }
+.mj-dropdown-menu { top:100%; left:-16px; }
+.mj-submenu-menu { left:100%; top:-8px; margin-left:2px; }
+.mj-dropdown:hover > .mj-dropdown-menu,.mj-dropdown:focus-within > .mj-dropdown-menu,
+.mj-submenu:hover > .mj-submenu-menu,.mj-submenu:focus-within > .mj-submenu-menu,
+.mj-dropdown.is-open > .mj-dropdown-menu,.mj-submenu.is-open > .mj-submenu-menu { display:block; }
+.mj-dropdown-menu a,.mj-submenu-menu a { display:flex; justify-content:space-between; gap:16px; padding:11px 13px; border-radius:5px; color:#1b293c; font:600 13px Inter,Arial,sans-serif; text-decoration:none; white-space:nowrap; }
+.mj-dropdown-menu a:hover,.mj-submenu-menu a:hover { background:#f0e8da; color:#8d632d; }
+.mj-featured-link { background:#a77a38; color:#fff!important; padding:13px 17px!important; border-radius:3px; letter-spacing:.65px!important; }
+.mj-featured-link:hover { background:#17263a; color:#fff!important; }
+.mj-menu-toggle { display:none; border:1px solid #d5c5a9; background:#fff; color:#152238; padding:9px 12px; border-radius:4px; font-size:20px; }
+.mj-submenu > a { display:flex; justify-content:space-between; }
+@media(max-width:900px) {
+ .mj-header-inner { min-height:78px; flex-wrap:wrap; padding:8px 0; }
+ .mj-brand img { width:min(250px,65vw); }
+ .mj-menu-toggle { display:block; }
+ .mj-nav { display:none; width:100%; flex-direction:column; align-items:stretch; gap:0; padding:5px 0 14px; }
+ .mj-nav.is-open { display:flex; }
+ .mj-nav > a,.mj-dropdown-toggle { display:block; width:100%; text-align:left; padding:13px 10px; }
+ .mj-dropdown-menu,.mj-submenu-menu { position:static; box-shadow:none; border:0; border-left:2px solid #c5a16a; border-radius:0; margin:0 0 0 14px; padding:3px 8px; }
+ .mj-submenu-menu { margin-left:18px; }
+ .mj-featured-link { margin-top:8px; text-align:center!important; }
+}
+/* Let the fixed photographic canvas show through the entire public site. */
+body > main, main, .hero, .stats, .section, .archive-section, .archive-hero,
+.archive-stats,.archive-main,.journalist-hero,.intro-section,.directory-section,
+.exhibition-hero,.collection-stats,.exhibition-intro,.research-hero,
+.research-stats,.research-intro,.it-highlights,.it-highlights-inner {
+ background-color:transparent!important;
+}
+.top-bar,.topbar { background:rgba(10,18,29,.78)!important; color:#f8f4ed!important; }
+.hero { padding-top:70px!important; padding-bottom:55px!important; }
+.hero-content { background:rgba(12,23,38,.64); border:1px solid rgba(255,255,255,.18); border-radius:14px; padding:clamp(28px,5vw,60px); color:#fff; backdrop-filter:blur(7px); }
+.hero h2,.hero .hero-description { color:#fff!important; }
+.hero .hero-description { opacity:.9; }
+.it-highlights { padding:28px 0 48px!important; }
+.it-highlights-inner { width:min(1200px,90%)!important; margin:auto; }
+.it-highlights-kicker { color:#f3d9a8!important; letter-spacing:3px!important; }
+.it-carousel { min-height:310px!important; background:linear-gradient(110deg,rgba(9,20,34,.94),rgba(15,35,55,.74)),url("https://res.cloudinary.com/tvnnb7i2/image/upload/v1795500590/Rashtrapati_Bhavan__Past_Meets_Present.png") center/cover!important; border:1px solid rgba(222,190,137,.55); border-radius:12px; overflow:hidden; }
+.it-slide { padding:clamp(28px,5vw,62px)!important; color:#fff!important; }
+.it-slide h2 { color:#fff!important; font-size:clamp(30px,4.5vw,54px)!important; font-weight:800!important; max-width:850px; }
+.it-slide p { color:rgba(255,255,255,.84)!important; max-width:700px; }
+.it-slide-tag { color:#e2bd80!important; letter-spacing:2px!important; }
+.it-slide-link { color:#f1d6a5!important; }
+.it-slide-mark { color:rgba(255,255,255,.13)!important; font-size:clamp(70px,12vw,140px)!important; }
+.it-dot { border-color:#d7b36a!important; }
+.it-dot.is-active { background:#d7b36a!important; }
+.it-carousel-arrows button { color:#fff!important; border-color:rgba(255,255,255,.5)!important; }
+.stats,.section,.archive-main,.archive-stats,.intro-section,.directory-section,
+.collection-stats,.exhibition-intro,.research-stats,.research-intro {
+ color:#fff;
+}
+.stats-grid,.story-card,.archive-card,.journalist-card,.exhibition-card,.document-card,
+.search-panel,.section-heading,.about-content {
+ background:rgba(248,246,241,.91)!important; color:#172235!important;
+ border:1px solid rgba(255,255,255,.25); border-radius:8px; backdrop-filter:blur(8px);
+}
+.story-content h3,.story-content p,.story-content small { color:#172235!important; }
+.section h2,.section-heading h2,.archive-main h2,.intro-section h2,.directory-section h2,
+.exhibition-intro h2,.research-intro h2 { color:#fff!important; }
+.section-label,.eyebrow { color:#e3bd82!important; }
+@media(prefers-reduced-motion:no-preference) {
+ .it-slide.is-active .it-slide-copy { animation:mjTextIn .7s ease both; }
+ @keyframes mjTextIn { from { opacity:0; transform:translateY(18px); } to {opacity:1;transform:translateY(0);} }
+}
+
+main > section { background-color:transparent!important; }
+footer { background:rgba(8,17,29,.86)!important; color:#f6f0e5!important; }
+footer a, footer p, footer h2, footer h3 { color:inherit; }
+
+.mj-archive-context { width:min(1200px,90%); margin:24px auto 0; padding:14px 18px; color:#fff; background:rgba(13,27,44,.86); border-left:3px solid #d7b36a; font:700 12px Inter,Arial,sans-serif; letter-spacing:1.5px; text-transform:uppercase; }
+
+/* ===== Investigative journalist editorial direction ===== */
+:root{--mj-ink:#111820;--mj-gold:#b68a52;--mj-paper:#f4f0e8;--mj-red:#8f2028}
+body{background-image:linear-gradient(180deg,rgba(7,13,20,.72),rgba(7,13,20,.52) 45%,rgba(7,13,20,.78)),url('https://res.cloudinary.com/tvnnb7i2/image/upload/v1795500590/Rashtrapati_Bhavan__Past_Meets_Present.png')!important;background-position:center top!important;background-size:cover!important;background-attachment:fixed!important}
+.top-bar,.topbar{background:#101820!important;border-bottom:1px solid rgba(182,138,82,.55)!important;letter-spacing:1.15px!important}
+.mj-header{background:rgba(247,244,237,.97)!important;border-bottom:3px solid #9a2730!important}
+.mj-header-inner{min-height:88px!important}
+.mj-brand img{width:clamp(225px,24vw,310px)!important}
+.mj-nav>.mj-featured-link{background:#8f2028!important;border-radius:0!important;box-shadow:4px 4px 0 #c5a06c}
+.mj-nav>.mj-featured-link:hover{background:#111820!important}
+.hero{padding:64px 0 42px!important;border:0!important}
+.hero-content{position:relative;min-height:400px;grid-template-columns:1.2fr .8fr!important;gap:34px!important;align-items:stretch!important;background:linear-gradient(105deg,rgba(8,17,27,.96),rgba(13,29,43,.84) 62%,rgba(13,29,43,.56))!important;border:1px solid rgba(211,178,126,.45)!important;border-radius:2px!important;box-shadow:0 25px 65px rgba(0,0,0,.32)!important;padding:clamp(30px,5vw,66px)!important;overflow:hidden}
+.hero-content:before{content:'MJ';position:absolute;right:35%;bottom:-85px;font:800 clamp(150px,25vw,300px)/1 Georgia,serif;color:rgba(255,255,255,.035);pointer-events:none}
+.hero .eyebrow,.hero .section-label{color:#d5ad76!important;letter-spacing:3.5px!important}
+.hero h2{font-size:clamp(42px,5.2vw,72px)!important;line-height:1.04!important;letter-spacing:-1.5px!important;max-width:760px}
+.hero h2 span{color:#d7b17c!important}
+.hero .hero-description{max-width:620px!important;font-size:15px!important;line-height:1.9!important;color:rgba(255,255,255,.82)!important}
+.hero .btn-primary{background:#982a32!important;border:1px solid #c08e68!important}
+.hero .btn-outline{border:1px solid rgba(255,255,255,.55)!important;color:#fff!important}
+.hero-image{min-height:270px!important;background:linear-gradient(0deg,rgba(6,13,21,.65),transparent 55%),url('https://res.cloudinary.com/tvnnb7i2/image/upload/v1795500590/Rashtrapati_Bhavan__Past_Meets_Present.png') center/cover!important;border:1px solid rgba(255,255,255,.22)!important;position:relative!important}
+.hero-image:after{content:'POLITICS  /  POWER  /  ACCOUNTABILITY';position:absolute;left:18px;bottom:18px;color:#fff;font:700 10px Inter,sans-serif;letter-spacing:2px}
+.image-caption{display:none!important}
+.it-highlights{padding:20px 0 55px!important}
+.it-highlights-kicker{font-size:10px!important;font-weight:800!important;letter-spacing:3px!important;text-transform:uppercase!important;color:#e0bd8b!important;margin:0 0 13px 4px!important}
+.it-carousel{min-height:340px!important;border-radius:2px!important;border:1px solid rgba(211,178,126,.5)!important;background:linear-gradient(100deg,rgba(8,16,25,.97),rgba(13,28,42,.82)),url('https://res.cloudinary.com/tvnnb7i2/image/upload/v1795500590/Rashtrapati_Bhavan__Past_Meets_Present.png') center/cover!important;box-shadow:0 18px 45px rgba(0,0,0,.24)!important}
+.it-slide{min-height:340px!important;align-items:center!important}
+.it-slide h2{font-family:Georgia,serif!important;font-size:clamp(34px,4.8vw,58px)!important;line-height:1.08!important;max-width:900px!important;letter-spacing:-.7px!important}
+.it-slide-tag{color:#d7b17c!important;font-size:10px!important;letter-spacing:3px!important;text-transform:uppercase!important}
+.it-slide p{font-size:14px!important;line-height:1.8!important}
+.it-slide-link{color:#e5c18c!important;border-bottom:1px solid rgba(229,193,140,.6)!important;padding-bottom:5px!important}
+.stats-grid{background:rgba(246,242,233,.95)!important;border-top:3px solid #a22a32!important;border-radius:0!important}
+.stat-item h3{color:#8f2028!important}
+.section{padding:76px 0!important}
+.section-heading h2,.about-content h2{font-family:Georgia,serif!important;letter-spacing:-.6px!important}
+.section-heading p{line-height:1.8!important}
+.story-grid{gap:18px!important}
+.story-card,.archive-card,.journalist-card,.exhibition-card,.document-card{border-radius:2px!important;box-shadow:0 12px 35px rgba(0,0,0,.14)!important;overflow:hidden!important}
+.story-card{border-top:3px solid #a32b34!important}
+.story-image{height:230px!important;filter:saturate(.78)!important}
+.story-content{padding:25px!important}
+.story-content h3{font-size:23px!important;line-height:1.2!important}
+.story-content small{color:#922a32!important;letter-spacing:1.7px!important}
+.archive-year{border-radius:0!important;border:1px solid rgba(198,165,119,.5)!important;background:rgba(14,26,39,.83)!important}
+.archive-year:hover{background:#8f2028!important}
+.about-content{border-left:4px solid #a32b34!important;border-radius:0!important;padding:clamp(28px,5vw,55px)!important}
+footer{border-top:3px solid #a32b34!important}
+.footer-logo{font-family:Georgia,serif!important;font-size:30px!important;letter-spacing:-1px!important}
+.footer-logo span{color:#d3ae7c!important}
+@media(max-width:900px){.hero-content{grid-template-columns:1fr!important}.hero-image{min-height:210px!important}.hero{padding:34px 0 25px!important}.it-carousel,.it-slide{min-height:390px!important}.mj-header-inner{min-height:76px!important}}
+@media(max-width:600px){.hero-content{padding:27px 22px!important}.hero h2{font-size:40px!important}.it-slide{padding:28px 22px!important}.it-slide h2{font-size:34px!important}.stats-grid{grid-template-columns:repeat(2,1fr)!important}.section{padding:55px 0!important}}
+
+
+/* ===== User-supplied Raisina Hill background across every public page ===== */
+html { min-height:100%; }
+body { background-color:#101820!important; background-image:linear-gradient(180deg,rgba(8,15,24,.48),rgba(8,15,24,.56) 48%,rgba(8,15,24,.68)),url("https://res.cloudinary.com/tvnnb7i2/image/upload/v1795500590/Rashtrapati_Bhavan__Past_Meets_Present.png")!important; background-position:center center!important; background-size:cover!important; background-repeat:no-repeat!important; background-attachment:fixed!important; }
+@media(max-width:760px) { body { background-attachment:scroll!important; background-position:center center!important; } }
+main,main>section,.section,.archive-main,.archive-stats,.intro-section,.directory-section,.exhibition-intro,.research-intro,.research-stats { background-color:transparent!important; }
+.stats-grid,.story-card,.archive-card,.journalist-card,.exhibition-card,.document-card,.search-panel,.section-heading,.about-content { background:rgba(250,247,240,.93)!important; }
+/* ===== Expanded Meetu Jain biography and portrait placeholder ===== */
+.mj-about-feature { padding:clamp(58px,8vw,105px) 0!important; }
+.mj-about-layout { display:grid!important; grid-template-columns:minmax(260px,.82fr) minmax(0,1.18fr)!important; gap:clamp(28px,5vw,72px)!important; align-items:center!important; padding:clamp(22px,4vw,48px)!important; background:rgba(10,20,31,.88)!important; border:1px solid rgba(215,179,122,.55)!important; box-shadow:0 24px 65px rgba(0,0,0,.3)!important; color:#f7f1e7!important; }
+.mj-about-portrait { min-height:480px; position:relative; display:flex; align-items:center; justify-content:center; overflow:hidden; border:1px solid rgba(225,195,148,.65); background:linear-gradient(145deg,rgba(214,184,139,.16),rgba(7,15,24,.8)),repeating-linear-gradient(135deg,rgba(255,255,255,.035) 0 1px,transparent 1px 12px); }
+.mj-portrait-placeholder { display:flex; flex-direction:column; align-items:center; gap:12px; text-align:center; padding:28px; color:#f7ead5; }
+.mj-portrait-monogram { font:500 clamp(90px,13vw,150px)/1 Georgia,serif; color:rgba(226,194,145,.78); border-bottom:1px solid #c9a36e; padding:0 20px 15px; }
+.mj-portrait-placeholder strong { font:700 14px Inter,Arial,sans-serif; letter-spacing:4px; }
+.mj-portrait-placeholder small { font:600 10px Inter,Arial,sans-serif; letter-spacing:3px; color:#d8b984; }
+.mj-portrait-instruction { margin-top:20px; max-width:250px; font:12px/1.6 Inter,Arial,sans-serif; color:rgba(255,255,255,.68); }
+.mj-portrait-instruction code { color:#f0d3a5; }
+.mj-portrait-caption { position:absolute; bottom:0; left:0; right:0; padding:13px 16px; text-align:center; color:#f4dfbf; background:rgba(5,12,20,.78); font:700 9px Inter,Arial,sans-serif; letter-spacing:2px; }
+.mj-about-copy { padding:clamp(8px,2vw,24px) 0; }
+.mj-about-copy .section-label { color:#e3bd82!important; font:700 10px Inter,Arial,sans-serif; letter-spacing:3px; text-transform:uppercase; }
+.mj-about-kicker { margin:18px 0 12px!important; color:#d7b17c!important; font:700 11px Inter,Arial,sans-serif!important; letter-spacing:3px; }
+.mj-about-copy h2 { margin:0 0 22px!important; color:#fff!important; font:600 clamp(34px,4.1vw,55px)/1.08 Georgia,serif!important; letter-spacing:-.7px; }
+.mj-about-copy p { margin:0 0 17px; color:rgba(255,255,255,.83)!important; font:15px/1.9 Inter,Arial,sans-serif; }
+.mj-about-copy .mj-about-lead { color:#fff!important; font:500 clamp(16px,1.6vw,19px)/1.75 Georgia,serif; }
+.mj-about-signoff { display:flex; align-items:center; gap:13px; margin-top:28px; color:#e5c18c; font:700 10px Inter,Arial,sans-serif; letter-spacing:2px; text-transform:uppercase; }
+.mj-about-rule { display:block; width:44px; height:2px; background:#b68a52; }
+@media(max-width:760px) { .mj-about-layout { grid-template-columns:1fr!important; } .mj-about-portrait { min-height:370px; } .mj-about-copy h2 { font-size:36px!important; } }
+
+
+/* ===== FIX: make the supplied Raisina image visibly appear behind page content ===== */
+html { background:#111923!important; }
+body {
+  position:relative!important;
+  isolation:isolate;
+  background:transparent!important;
+  color:#f6f1e8;
+}
+body::before {
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:-1;
+  pointer-events:none;
+  background:
+    linear-gradient(180deg,rgba(8,15,24,.35),rgba(8,15,24,.48) 55%,rgba(8,15,24,.62)),
+    url("https://res.cloudinary.com/tvnnb7i2/image/upload/v1795500590/Rashtrapati_Bhavan__Past_Meets_Present.png") center center / cover no-repeat;
+}
+main, main > section, main .hero, main .about, main .exhibitions,
+main .archive-section, main .research, main .journalists,
+main .container, main .section-inner {
+  background-color:transparent!important;
+}
+/* Keep editorial panels readable, but translucent so the image remains visible. */
+main .hero-content, main .hero-text, main .hero-copy,
+main .story-card, main .archive-card, main .exhibition-card,
+main .research-card, main .journalist-card, main .mj-about-layout {
+  background-color:rgba(12,22,34,.84)!important;
+}
+header, .mj-header { background:rgba(250,248,244,.94)!important; }
+footer { background:rgba(10,17,27,.94)!important; }
+@media(max-width:760px) {
+  body::before { background-attachment:scroll; background-position:center center; }
+}
+
+
+/* ===== GLOBAL TYPOGRAPHY / CONTRAST PASS ===== */
+/* Default text over the photographic/dark page background */
+body, main, main p, main li, main small, main label {
+  color:#f7f3ec;
+}
+main h1, main h2, main h3, main h4, main h5, main h6 {
+  color:#fffaf2;
+  text-shadow:0 1px 2px rgba(0,0,0,.22);
+}
+main a:not(.button):not(.btn) {
+  color:#f0c987;
+  text-decoration-thickness:1px;
+  text-underline-offset:3px;
+}
+main a:not(.button):not(.btn):hover { color:#fff0d2; }
+
+/* Light editorial panels: use deep ink text for clear contrast */
+main .story-card, main .archive-card, main .journalist-card,
+main .exhibition-card, main .document-card, main .search-panel,
+main .section-heading, main .about-content, main .stats-grid,
+main .archive-stats, main .research-stats,
+main .story-card p, main .archive-card p, main .journalist-card p,
+main .exhibition-card p, main .document-card p,
+main .story-card li, main .archive-card li {
+  color:#202833!important;
+}
+main .story-card h1, main .story-card h2, main .story-card h3,
+main .archive-card h1, main .archive-card h2, main .archive-card h3,
+main .journalist-card h1, main .journalist-card h2, main .journalist-card h3,
+main .exhibition-card h1, main .exhibition-card h2, main .exhibition-card h3,
+main .document-card h1, main .document-card h2, main .document-card h3,
+main .section-heading h1, main .section-heading h2, main .section-heading h3,
+main .about-content h1, main .about-content h2, main .about-content h3 {
+  color:#111b28!important;
+  text-shadow:none!important;
+}
+main .story-card a, main .archive-card a, main .journalist-card a,
+main .exhibition-card a, main .document-card a {
+  color:#8e202b!important;
+}
+main .story-card a:hover, main .archive-card a:hover,
+main .journalist-card a:hover, main .exhibition-card a:hover,
+main .document-card a:hover { color:#5f111b!important; }
+
+/* Keep the About feature intentionally dark with warm, readable typography */
+.mj-about-copy, .mj-about-copy p { color:#f7f3ec!important; }
+.mj-about-copy h2 { color:#fffaf2!important; }
+.mj-about-copy .mj-about-lead { color:#fff!important; }
+
+/* Header, dropdowns and footer */
+header, header a, .mj-header, .mj-header a,
+nav, nav a { color:#172231!important; }
+header a:hover, nav a:hover { color:#8e202b!important; }
+header .dropdown-menu, nav .dropdown-menu,
+header .submenu, nav .submenu {
+  background:#fffdf8!important;
+  color:#172231!important;
+  border:1px solid rgba(23,34,49,.14);
+  box-shadow:0 12px 28px rgba(0,0,0,.18);
+}
+header .dropdown-menu a, nav .dropdown-menu a,
+header .submenu a, nav .submenu a { color:#172231!important; }
+footer, footer p, footer li, footer h1, footer h2, footer h3,
+footer a { color:#f7f3ec!important; }
+footer a:hover { color:#f0c987!important; }
+
+/* Improve small labels and metadata on dark surfaces */
+.section-label, .eyebrow, .kicker, .meta, .story-meta,
+.archive-meta, .date, .category-label {
+  color:#f0c987!important;
+}
+
+/* Highlights carousel: image-led editorial slides (not separate news cards) */
+.it-carousel{
+  background:
+    linear-gradient(110deg,rgba(7,16,27,.96),rgba(9,22,36,.86))!important;
+  min-height:clamp(390px,38vw,500px)!important;
+}
+.it-carousel .it-slide{
+  display:grid!important;
+  grid-template-columns:minmax(0,1.15fr) minmax(280px,.85fr)!important;
+  grid-template-areas:"copy image"!important;
+  align-items:center!important;
+  gap:clamp(24px,4vw,58px)!important;
+  min-height:clamp(390px,38vw,500px)!important;
+  padding:clamp(26px,4vw,58px)!important;
+}
+.it-carousel .it-slide-copy{grid-area:copy;position:relative;z-index:2;max-width:760px}
+.it-carousel .it-slide-image{
+  grid-area:image;position:relative;align-self:stretch;min-height:270px;
+  overflow:hidden;border:1px solid rgba(220,184,126,.7);
+  box-shadow:0 18px 42px rgba(0,0,0,.3);background:#182638;
+}
+.it-carousel .it-slide-image::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,transparent 58%,rgba(5,13,22,.72));
+  pointer-events:none;
+}
+.it-carousel .it-slide-image img{
+  display:block;width:100%;height:100%;min-height:270px;max-height:390px;
+  object-fit:cover;filter:saturate(.88) contrast(1.04);
+  transition:transform .65s ease,filter .65s ease;
+}
+.it-carousel .it-slide.is-active .it-slide-image img{transform:scale(1.025)}
+.it-carousel .it-slide-image:hover img{transform:scale(1.06);filter:saturate(1) contrast(1.05)}
+.it-image-caption{
+  position:absolute;z-index:1;left:16px;bottom:14px;
+  color:#fff;font:700 9px/1.4 Inter,Arial,sans-serif;
+  letter-spacing:1.8px;text-shadow:0 1px 5px #000;
+}
+.it-carousel .it-slide h2{max-width:760px!important}
+.it-carousel .it-slide-mark{position:absolute;left:clamp(22px,4vw,55px);bottom:8px;z-index:0;pointer-events:none}
+@media(max-width:760px){
+  .it-carousel .it-slide{
+    grid-template-columns:1fr!important;grid-template-areas:"image" "copy"!important;
+    gap:20px!important;padding:20px!important;min-height:0!important;
+  }
+  .it-carousel .it-slide-image{min-height:190px;max-height:230px}
+  .it-carousel .it-slide-image img{min-height:190px;max-height:230px}
+  .it-carousel .it-slide-copy{max-width:none}
+  .it-carousel .it-slide h2{font-size:clamp(28px,8vw,40px)!important}
+  .it-carousel .it-slide-mark{display:none}
+}
+@media(prefers-reduced-motion:reduce){
+  .it-carousel .it-slide-image img{transition:none!important}
+}
+
+/* FIX: Highlights slides must stay inside their own carousel panel.
+   This prevents the large slide number (e.g. 02) from drifting over the footer. */
+.it-carousel{position:relative!important;isolation:isolate!important;overflow:hidden!important}
+.it-carousel .it-slide{position:relative!important;inset:auto!important;width:100%!important;box-sizing:border-box!important}
+.it-carousel .it-slide:not(.is-active){display:none!important}
+.it-carousel .it-slide.is-active{display:grid!important}
+.it-carousel .it-slide-mark{position:absolute!important;left:clamp(22px,4vw,55px)!important;bottom:8px!important;z-index:0!important;pointer-events:none!important}
+.it-carousel .it-slide-copy,.it-carousel .it-slide-image{z-index:1}
+
+
+/* =========================================================
+   MEETU JAIN — CLEAN EDITORIAL POLISH (GitHub-ready)
+   ========================================================= */
+:root{
+  --mj-ink:#111b2a;
+  --mj-ink-soft:#26364a;
+  --mj-gold:#b58b4b;
+  --mj-gold-light:#d9bd8c;
+  --mj-paper:#fbfaf7;
+  --mj-line:rgba(25,38,55,.14);
+}
+body{
+  font-family:Inter,Arial,sans-serif!important;
+  color:#172235;
+  background:
+    linear-gradient(135deg,rgba(7,16,29,.70),rgba(10,19,31,.48) 48%,rgba(7,14,24,.72)),
+    url("https://res.cloudinary.com/tvnnb7i2/image/upload/v1795500590/Rashtrapati_Bhavan__Past_Meets_Present.png") center center/cover fixed no-repeat!important;
+  background-attachment:fixed!important;
+}
+h1,h2,h3,.logo h1,.footer-logo{
+  font-family:"Playfair Display",Georgia,serif!important;
+}
+p,li,label,input,button,select,textarea{
+  font-family:Inter,Arial,sans-serif;
+}
+.mj-header{
+  background:rgba(251,250,247,.97)!important;
+  border-bottom:1px solid rgba(181,139,75,.32)!important;
+  box-shadow:0 5px 22px rgba(10,20,35,.09)!important;
+  backdrop-filter:blur(18px);
+}
+.mj-header-inner{
+  width:min(1280px,92%)!important;
+  min-height:84px!important;
+  gap:clamp(16px,2.5vw,34px)!important;
+}
+.mj-brand img{
+  width:clamp(205px,22vw,290px)!important;
+  max-height:66px;
+  object-fit:contain;
+}
+.mj-nav{
+  gap:clamp(12px,1.8vw,26px)!important;
+}
+.mj-nav>a,.mj-dropdown-toggle{
+  position:relative;
+  color:#1c2a3c!important;
+  font:700 11px/1.2 Inter,Arial,sans-serif!important;
+  letter-spacing:1.05px!important;
+  padding:14px 2px!important;
+  transition:color .2s ease,background .2s ease!important;
+}
+.mj-nav>a:not(.mj-featured-link):after,
+.mj-dropdown-toggle:after{
+  content:"";
+  position:absolute;
+  left:0;right:100%;bottom:6px;
+  height:2px;background:var(--mj-gold);
+  transition:right .22s ease;
+}
+.mj-nav>a:not(.mj-featured-link):hover:after,
+.mj-dropdown-toggle:hover:after{right:0}
+.mj-nav>a:hover,.mj-dropdown-toggle:hover{color:#9a6d30!important}
+.mj-dropdown-toggle span{font-size:15px;color:var(--mj-gold)!important}
+.mj-dropdown-menu,.mj-submenu-menu{
+  min-width:232px!important;
+  padding:8px!important;
+  border:1px solid rgba(181,139,75,.28)!important;
+  border-radius:9px!important;
+  background:rgba(255,254,251,.99)!important;
+  box-shadow:0 18px 42px rgba(10,20,35,.16)!important;
+  backdrop-filter:blur(14px);
+}
+.mj-dropdown-menu{top:calc(100% + 7px)!important;left:-14px!important}
+.mj-submenu-menu{left:calc(100% + 5px)!important;top:-7px!important}
+.mj-dropdown-menu a,.mj-submenu-menu a{
+  min-height:40px;
+  align-items:center;
+  padding:10px 12px!important;
+  border-radius:6px!important;
+  color:#26364a!important;
+  font:600 12px/1.4 Inter,Arial,sans-serif!important;
+  letter-spacing:.1px;
+  transition:background .18s ease,color .18s ease,padding .18s ease;
+}
+.mj-dropdown-menu a:hover,.mj-submenu-menu a:hover{
+  background:#f3eee5!important;color:#8d642f!important;padding-left:16px!important;
+}
+.mj-featured-link{
+  display:inline-flex!important;align-items:center;justify-content:center;
+  min-height:42px;
+  padding:12px 16px!important;
+  border-radius:5px!important;
+  background:#8e2630!important;
+  color:#fff!important;
+  font:700 10px/1.25 Inter,Arial,sans-serif!important;
+  letter-spacing:.75px!important;
+  box-shadow:0 5px 13px rgba(142,38,48,.16)!important;
+  transition:transform .2s ease,background .2s ease,box-shadow .2s ease!important;
+}
+.mj-featured-link:hover{
+  background:#17263a!important;color:#fff!important;
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(23,38,58,.2)!important;
+}
+.mj-menu-toggle{
+  border:1px solid #d8c7aa!important;
+  background:#fff!important;color:#1c2a3c!important;
+  border-radius:7px!important;padding:9px 12px!important;
+}
+.it-highlights{padding:38px 0 52px!important}
+.it-highlights-inner{width:min(1180px,91%)!important}
+.it-highlights-kicker{
+  margin:0 0 15px!important;
+  color:#f1d7ad!important;
+  font:700 10px/1.4 Inter,Arial,sans-serif!important;
+  letter-spacing:2.8px!important;
+  text-transform:uppercase;
+}
+.it-carousel{
+  border:1px solid rgba(222,190,139,.28)!important;
+  border-radius:13px!important;
+  overflow:hidden!important;
+  box-shadow:0 18px 48px rgba(0,0,0,.24)!important;
+  background:linear-gradient(115deg,rgba(8,18,31,.96),rgba(16,35,55,.88)),url("https://res.cloudinary.com/tvnnb7i2/image/upload/v1795500590/Rashtrapati_Bhavan__Past_Meets_Present.png") center/cover no-repeat!important;
+}
+.it-carousel .it-slide{
+  min-height:330px!important;
+  padding:clamp(24px,4.5vw,54px)!important;
+  gap:clamp(22px,4vw,48px)!important;
+}
+.it-carousel .it-slide-copy{max-width:760px!important}
+.it-carousel .it-slide h2{
+  max-width:780px!important;
+  margin:10px 0 15px!important;
+  color:#fff!important;
+  font:700 clamp(29px,4vw,49px)/1.13 "Playfair Display",Georgia,serif!important;
+  letter-spacing:-.65px!important;
+  text-wrap:balance;
+}
+.it-carousel .it-slide h2 a{
+  color:inherit!important;text-decoration:none!important;
+  transition:color .2s ease;
+}
+.it-carousel .it-slide h2 a:hover{color:#e5c58f!important}
+.it-carousel .it-slide-tag{
+  color:#e4c18b!important;
+  font:700 9px/1.5 Inter,Arial,sans-serif!important;
+  letter-spacing:1.8px!important;
+}
+.it-carousel .it-slide p{
+  max-width:620px!important;
+  color:rgba(255,255,255,.78)!important;
+  font:400 13px/1.8 Inter,Arial,sans-serif!important;
+}
+.it-carousel .it-slide-link{
+  display:inline-flex;align-items:center;gap:10px;
+  margin-top:15px;padding-bottom:5px;
+  border-bottom:1px solid rgba(229,197,143,.65);
+  color:#f1d6a5!important;
+  font:700 10px/1.4 Inter,Arial,sans-serif!important;
+  letter-spacing:.8px;text-transform:uppercase;
+}
+.it-carousel .it-slide-link:hover{color:#fff!important}
+.it-carousel .it-slide-mark{
+  color:rgba(255,255,255,.10)!important;
+  font:700 clamp(70px,10vw,120px)/1 "Playfair Display",Georgia,serif!important;
+}
+.it-carousel-controls{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:16px;margin-top:17px;
+}
+.it-dot{
+  width:8px!important;height:8px!important;
+  border:1px solid #d9bd8c!important;
+  background:rgba(255,255,255,.18)!important;
+  transition:width .2s ease,background .2s ease!important;
+}
+.it-dot.is-active{width:25px!important;border-radius:8px!important;background:#d9bd8c!important}
+.it-carousel-arrows{display:flex;gap:8px}
+.it-carousel-arrows button{
+  width:36px;height:36px;
+  border:1px solid rgba(255,255,255,.35)!important;
+  border-radius:50%!important;
+  background:rgba(10,20,34,.42)!important;
+  color:#fff!important;
+  transition:background .2s ease,border-color .2s ease,transform .2s ease!important;
+}
+.it-carousel-arrows button:hover{
+  background:#b58b4b!important;border-color:#b58b4b!important;
+  transform:translateY(-1px);
+}
+@media(max-width:900px){
+ .mj-header-inner{min-height:76px!important}
+ .mj-nav{padding:10px 0 16px!important}
+ .mj-nav>a,.mj-dropdown-toggle{padding:13px 12px!important}
+ .mj-dropdown-menu,.mj-submenu-menu{
+   background:#fffdfa!important;border-radius:7px!important;
+   border-left:2px solid #c5a16a!important;
+   margin:3px 0 5px 12px!important;
+ }
+ .mj-submenu-menu{margin-left:17px!important}
+ .mj-featured-link{margin:9px 10px 0!important;width:fit-content}
+}
+@media(max-width:760px){
+ .it-highlights{padding:25px 0 36px!important}
+ .it-carousel .it-slide{padding:18px!important}
+ .it-carousel .it-slide h2{font-size:clamp(27px,7.8vw,37px)!important;line-height:1.16!important}
+ .it-carousel .it-slide p{font-size:12px!important}
+ .it-carousel-controls{margin-top:13px}
+}
+@media(prefers-reduced-motion:reduce){
+ .mj-nav a,.mj-dropdown-menu a,.it-dot,.it-carousel-arrows button{transition:none!important}
+}
+
+/* Preserve the modal trigger class without applying the header CTA button styling inside slides. */
+.it-carousel .it-slide h2 a.mj-featured-link{
+  display:inline!important;
+  min-height:0!important;
+  padding:0!important;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  color:inherit!important;
+  font:inherit!important;
+  letter-spacing:inherit!important;
+  text-transform:none!important;
+}
+.it-carousel .it-slide h2 a.mj-featured-link:hover{
+  background:transparent!important;
+  color:#e5c58f!important;
+  transform:none!important;
+  box-shadow:none!important;
+}
+.it-carousel .it-slide a.it-slide-link.mj-featured-link{
+  display:inline-flex!important;
+  min-height:0!important;
+  margin:15px 0 0!important;
+  padding:0 0 5px!important;
+  border:0!important;
+  border-bottom:1px solid rgba(229,197,143,.65)!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  color:#f1d6a5!important;
+  font:700 10px/1.4 Inter,Arial,sans-serif!important;
+  letter-spacing:.8px!important;
+  text-transform:uppercase!important;
+}
+.it-carousel .it-slide a.it-slide-link.mj-featured-link:hover{
+  color:#fff!important;background:transparent!important;transform:none!important;box-shadow:none!important;
+}
+
+
+/* Root-level text wordmark — no local logo image dependency */
+.mj-brand-wordmark{
+ display:flex!important;flex-direction:column;align-items:flex-start;
+ gap:3px;text-decoration:none!important;white-space:nowrap;
+}
+.mj-brand-wordmark .mj-brand-name{
+ color:#142238;font:700 clamp(27px,3vw,36px)/1 "Playfair Display",Georgia,serif;
+ letter-spacing:-1.1px;
+}
+.mj-brand-wordmark .mj-brand-name em{color:#9b2933;font-style:normal}
+.mj-brand-wordmark small{
+ color:#78684f;font:700 8px/1.4 Inter,Arial,sans-serif;
+ letter-spacing:1.7px;
+}
+@media(max-width:900px){
+ .mj-brand-wordmark .mj-brand-name{font-size:29px}
+ .mj-brand-wordmark small{font-size:7px;letter-spacing:1.25px}
+}

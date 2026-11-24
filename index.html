@@ -1,0 +1,1268 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Official website of Meetu Jain, independent political journalist and investigative reporter. Explore selected video reports, published work and reporting since 1993.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Meetu Jain">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Meetu Jain | Independent Political Journalist & Investigative Reporter">
+<meta property="og:description" content="Independent political journalism, investigative reporting and selected video reports. Reporting since 1993.">
+<meta property="og:image" content="https://res.cloudinary.com/tvnnb7i2/image/upload/v1795500590/Rashtrapati_Bhavan__Past_Meets_Present.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://YOUR-DOMAIN-HERE/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Meetu Jain","jobTitle":"Independent Political Journalist and Investigative Reporter","url":"https://YOUR-DOMAIN-HERE/","description":"Political journalist and investigative reporter, reporting since 1993."}
+</script>
+
+<title>Meetu Jain | Independent Political Journalist & Investigative Reporter</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+/* =========================
+   GLOBAL SETTINGS
+========================= */
+
+:root {
+    --white: #FFFFFF;
+    --black: #151515;
+    --grey: #D9D9D9;
+    --light-grey: #F5F5F3;
+    --red: #A51F2B;
+    --text-grey: #666666;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--white);
+    color: var(--black);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: min(1200px, 90%);
+    margin: auto;
+}
+
+/* =========================
+   TOP BAR
+========================= */
+
+.top-bar {
+    background: var(--black);
+    color: var(--white);
+    padding: 9px 0;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.top-bar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background: var(--white);
+    border-bottom: 1px solid var(--grey);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.logo h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 37px;
+    font-weight: 800;
+    letter-spacing: -1.5px;
+    line-height: 1.1;
+}
+
+.logo span {
+    color: var(--red);
+}
+
+.logo p {
+    font-size: 9px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--text-grey);
+    margin-top: 5px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav a {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--red);
+}
+
+.nav-cta {
+    background: var(--red);
+    color: var(--white);
+    padding: 12px 18px;
+}
+
+.nav-cta:hover {
+    background: var(--black);
+    color: var(--white);
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    background: var(--light-grey);
+    padding: 90px 0;
+    border-bottom: 1px solid var(--grey);
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.eyebrow {
+    color: var(--red);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(42px, 5vw, 68px);
+    line-height: 1.12;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.hero h2 span {
+    color: var(--red);
+}
+
+.hero-description {
+    color: var(--text-grey);
+    font-size: 15px;
+    max-width: 530px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 24px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: var(--red);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background: var(--black);
+}
+
+.btn-outline {
+    border: 1px solid var(--black);
+}
+
+.btn-outline:hover {
+    background: var(--black);
+    color: var(--white);
+}
+
+.hero-image {
+    min-height: 390px;
+    background:
+    linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.25)),
+    url('https://res.cloudinary.com/tvnnb7i2/image/upload/v1795500590/Rashtrapati_Bhavan__Past_Meets_Present.png')
+    center/cover;
+    position: relative;
+}
+
+.image-caption {
+    position: absolute;
+    bottom: 0;
+    background: var(--black);
+    color: var(--white);
+    padding: 15px 20px;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+/* =========================
+   STATISTICS
+========================= */
+
+.stats {
+    padding: 35px 0;
+    border-bottom: 1px solid var(--grey);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    gap: 20px;
+}
+
+.stat-item h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    color: var(--red);
+}
+
+.stat-item p {
+    font-size: 11px;
+    color: var(--text-grey);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+.section {
+    padding: 85px 0;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+
+.section-heading h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+}
+
+.section-heading p {
+    color: var(--text-grey);
+    font-size: 13px;
+    max-width: 450px;
+}
+
+.section-label {
+    color: var(--red);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   FEATURED STORIES
+========================= */
+
+.story-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 25px;
+}
+
+.story-card {
+    border: 1px solid var(--grey);
+    transition: 0.3s;
+}
+
+.story-card:hover {
+    transform: translateY(-5px);
+}
+
+.story-image {
+    height: 210px;
+    background-position: center;
+    background-size: cover;
+}
+
+.story-one {
+    background-image: url('https://res.cloudinary.com/tvnnb7i2/image/upload/v1795500590/Rashtrapati_Bhavan__Past_Meets_Present.png');
+}
+
+.story-two {
+    background-image: url('https://res.cloudinary.com/tvnnb7i2/image/upload/v1795500590/Rashtrapati_Bhavan__Past_Meets_Present.png');
+}
+
+.story-three {
+    background-image: url('https://res.cloudinary.com/tvnnb7i2/image/upload/v1795500590/Rashtrapati_Bhavan__Past_Meets_Present.png');
+}
+
+.story-content {
+    padding: 22px;
+}
+
+.story-content small {
+    color: var(--red);
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.story-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    line-height: 1.3;
+    margin: 12px 0;
+}
+
+.story-content p {
+    color: var(--text-grey);
+    font-size: 12px;
+}
+
+/* =========================
+   ARCHIVE SECTION
+========================= */
+
+.archive-section {
+    background: var(--black);
+    color: var(--white);
+}
+
+.archive-section .section-heading p {
+    color: #BBBBBB;
+}
+
+.archive-section .section-label {
+    color: #D98B91;
+}
+
+.archive-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 12px;
+}
+
+.archive-year {
+    border: 1px solid #444;
+    padding: 25px 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.archive-year:hover {
+    background: var(--red);
+    border-color: var(--red);
+}
+
+.archive-year h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+}
+
+.archive-year p {
+    color: #BBBBBB;
+    font-size: 10px;
+}
+
+/* =========================
+   JOURNALIST PROFILES
+========================= */
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.profile-card {
+    border-bottom: 2px solid var(--grey);
+    padding-bottom: 20px;
+}
+
+.profile-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    filter: grayscale(100%);
+    margin-bottom: 18px;
+}
+
+.profile-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 21px;
+}
+
+.profile-card p {
+    font-size: 12px;
+    color: var(--text-grey);
+}
+
+/* =========================
+   MULTIMEDIA EXHIBITIONS
+========================= */
+
+.exhibitions {
+    background: var(--light-grey);
+}
+
+.exhibition-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.exhibition-card {
+    background: var(--white);
+}
+
+.exhibition-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.exhibition-content {
+    padding: 22px;
+}
+
+.exhibition-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.exhibition-content p {
+    font-size: 12px;
+    color: var(--text-grey);
+}
+
+/* =========================
+   RESEARCH SECTION
+========================= */
+
+.research-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.research-card {
+    border: 1px solid var(--grey);
+    padding: 30px;
+    transition: 0.3s;
+}
+
+.research-card:hover {
+    border-color: var(--red);
+}
+
+.research-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+    margin: 15px 0;
+}
+
+.research-card p {
+    font-size: 12px;
+    color: var(--text-grey);
+}
+
+.research-icon {
+    color: var(--red);
+    font-size: 28px;
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about {
+    background: var(--light-grey);
+    text-align: center;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.about h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    color: var(--text-grey);
+    font-size: 14px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: var(--black);
+    color: var(--white);
+    padding: 60px 0 25px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 45px;
+}
+
+.footer-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+}
+
+.footer-logo span {
+    color: var(--red);
+}
+
+.footer-about {
+    color: #AAAAAA;
+    font-size: 12px;
+    max-width: 300px;
+    margin-top: 15px;
+}
+
+.footer-column h4 {
+    font-size: 12px;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-column a {
+    display: block;
+    color: #AAAAAA;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.footer-column a:hover {
+    color: var(--white);
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 22px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    color: #AAAAAA;
+    font-size: 11px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 1000px) {
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 10px;
+    }
+
+    .hero-content {
+        gap: 30px;
+    }
+
+    .story-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .archive-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .profile-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+
+    .top-bar-content {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .top-bar-content span:last-child {
+        display: none;
+    }
+
+    .header-content {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    nav {
+        width: 100%;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding: 12px 0;
+    }
+
+    nav a {
+        white-space: nowrap;
+    }
+
+    .hero {
+        padding: 55px 0;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-image {
+        min-height: 270px;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .section-heading {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .section-heading h2 {
+        font-size: 32px;
+    }
+
+    .story-grid,
+    .exhibition-grid,
+    .research-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .archive-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .profile-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .profile-card img {
+        height: 200px;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .archive-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .profile-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* Legacy search styles retained for compatibility */
+
+#archiveSearch {
+    width: 100%;
+    max-width: 650px;
+    padding: 17px 20px;
+    margin: 25px 0;
+    border: 1px solid #D9D9D9;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+}
+
+#archiveSearch:focus {
+    border-color: #A51F2B;
+}
+
+.search-result {
+    padding: 18px;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.search-result h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+}
+
+.search-result p {
+    color: #666666;
+    font-size: 12px;
+}
+
+
+
+/* Theme palette override */
+:root {
+    --white: #F7F3EC;
+    --black: #342821;
+    --grey: #D8CFC3;
+    --light: #EEE6DA;
+    --light-grey: #EEE6DA;
+    --red: #9B5D45;
+    --muted: #76685D;
+    --text-grey: #76685D;
+    --surface: #FFFCF7;
+    --accent-soft: #E8D6C8;
+}
+</style>
+<link rel="stylesheet" href="meetu-jain-global.css">\n<script src="meetu-jain-global.js" defer></script>\n<link rel="stylesheet" href="solo-reporter.css">
+
+<meta name="author" content="Meetu Jain">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Meetu Jain">
+<meta property="og:title" content="Meetu Jain | Independent Political Journalist & Investigative Reporter">
+<meta property="og:description" content="Official website of Meetu Jain, independent political journalist and investigative reporter. Explore investigations, video reports, published work and reporting since 1993.">
+<meta property="og:image" content="https://res.cloudinary.com/tvnnb7i2/image/upload/v1795500590/Rashtrapati_Bhavan__Past_Meets_Present.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Meetu Jain | Independent Political Journalist & Investigative Reporter">
+<meta name="twitter:description" content="Official website of Meetu Jain, independent political journalist and investigative reporter. Explore investigations, video reports, published work and reporting since 1993.">
+<link rel="canonical" href="https://YOUR-DOMAIN-HERE/">
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+
+<div class="top-bar">
+    <div class="container top-bar-content">
+        <span>MEETU JAIN&nbsp; / &nbsp;POLITICAL JOURNALIST</span>
+        <span>Investigative Reporting&nbsp; • &nbsp;Print&nbsp; • &nbsp;Television&nbsp; • &nbsp;Digital</span>
+    </div>
+</div>
+
+<!-- HEADER -->
+
+<header class="mj-header">
+  <div class="mj-header-inner">
+    <a class="mj-brand mj-brand-wordmark" href="index.html" aria-label="Meetu Jain home"><span class="mj-brand-name">Meetu <em>Jain</em></span><small>INDEPENDENT INVESTIGATIVE JOURNALIST</small></a>
+    <button class="mj-menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="mj-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <div class="mj-dropdown">
+        <button type="button" class="mj-dropdown-toggle" aria-expanded="false">Archives <span>⌄</span></button>
+        <div class="mj-dropdown-menu">
+          <div class="mj-submenu">
+            <a href="archive.html?channel=print">Print <span>›</span></a>
+            <div class="mj-submenu-menu">
+              <a href="archive.html?channel=print&publication=times-of-india">Times of India</a>
+              <a href="archive.html?channel=print&publication=indian-express">Indian Express</a>
+              <a href="archive.html?channel=print&publication=pioneer">Pioneer</a>
+              <a href="https://theprint.in/author/meetu-jain/" target="_blank" rel="noopener noreferrer">The Print</a>
+              <a href="https://www.outlookindia.com/author/meetu-jain" target="_blank" rel="noopener noreferrer">Outlook</a>
+              <a href="https://thewire.in/author/meetu-jain" target="_blank" rel="noopener noreferrer">The Wire</a>
+            </div>
+          </div>
+          <div class="mj-submenu">
+            <a href="archive.html?channel=television">Television (TV) <span>›</span></a>
+            <div class="mj-submenu-menu">
+              <a href="archive.html?channel=television&publication=news18">News18</a>
+              <a href="archive.html?channel=television&publication=aaj-tak">Aaj Tak</a>
+            </div>
+          </div>
+          <div class="mj-submenu">
+            <a href="social.html">Digital <span>›</span></a>
+            <div class="mj-submenu-menu">
+              <a href="https://x.com/meetujain" target="_blank" rel="noopener noreferrer">Twitter / X</a>
+              <a href="https://www.instagram.com/meetujainofficial/" target="_blank" rel="noopener noreferrer">Instagram</a>
+              <a href="https://www.linkedin.com/in/meetu-jain-00b652240/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="mj-featured-link" href="index.html?openStories=1">Story That Everyone Should Know ↗</a>
+      <div class="mj-site-search" role="search">
+        <form class="mj-search-form" id="mj-site-search-form" autocomplete="off">
+          <label class="mj-search-label" for="mj-site-search-input">Search this website</label>
+          <input id="mj-site-search-input" name="q" type="search" placeholder="Search stories, topics…" aria-label="Search stories, topics and media" aria-controls="mj-site-search-results">
+          <button type="submit" aria-label="Search"><span aria-hidden="true">⌕</span></button>
+        </form>
+        <div class="mj-search-results" id="mj-site-search-results" role="region" aria-label="Search results" hidden></div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+    <div class="container hero-content">
+
+        <div>
+            <div class="eyebrow">Political Journalist&nbsp; • &nbsp;Investigative Reporter</div>
+
+            <h2>
+                Asking the Questions
+                <span>That Power Would Rather Avoid.</span>
+            </h2>
+
+            <p class="hero-description">
+                Meetu Jain is a political journalist and investigative reporter. This portfolio brings together published work, political reporting, television appearances and digital journalism — creating a clear record of stories pursued and questions raised.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="archive.html" class="btn btn-primary">
+                    Explore Investigations
+                </a>
+                <a href="#about" class="btn btn-outline">
+                    About Meetu Jain
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <div class="image-caption">
+                POLITICAL JOURNALISM&nbsp; / &nbsp;INVESTIGATIVE REPORTING
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="it-highlights" aria-label="Stories That Everyone Should Know">
+  <div class="it-highlights-inner">
+    <div class="it-highlights-kicker">Stories That Everyone Should Know</div>
+    <div class="it-carousel" id="itHighlightsCarousel" aria-roledescription="carousel">
+      <article class="it-slide is-active" aria-hidden="false">
+        <div class="it-slide-image">
+          <img src="https://res.cloudinary.com/tvnnb7i2/image/upload/v1795500590/Rashtrapati_Bhavan__Past_Meets_Present.png" alt="Raisina Hill and the Indian government district" loading="lazy">
+          <span class="it-image-caption">MEETU JAIN • REPORTING SINCE 1993</span>
+        </div>
+        <div class="it-slide-copy">
+          <span class="it-slide-tag">2007–2008 • 2G Spectrum Investigation</span>
+          <h2><a class="mj-featured-link" href="index.html?openStories=1&amp;story=01">The 2G Donations Trail: Telecom Operators Paid a DMK-Linked NGO Days Before Licence Awards</a></h2>
+          <p>Explore the investigation, its reporting record and the questions raised by the available documents.</p>
+          <a href="index.html?openStories=1&amp;story=01" class="it-slide-link mj-featured-link">Read this investigation <span aria-hidden="true">→</span></a>
+        </div><div class="it-slide-mark" aria-hidden="true">01</div>
+      </article>
+      <article class="it-slide" aria-hidden="true">
+        <div class="it-slide-image">
+          <img src="https://res.cloudinary.com/tvnnb7i2/image/upload/v1795500590/Rashtrapati_Bhavan__Past_Meets_Present.png" alt="Historic view of government buildings in New Delhi" loading="lazy">
+          <span class="it-image-caption">MEETU JAIN • REPORTING SINCE 1993</span>
+        </div>
+        <div class="it-slide-copy">
+          <span class="it-slide-tag">2006–2007 • Political Accountability</span>
+          <h2><a class="mj-featured-link" href="index.html?openStories=1&amp;story=02">The Letter That Put the 2G Spectrum Pricing Decision at the Prime Minister’s Door</a></h2>
+          <p>Explore the investigation, its reporting record and the questions raised by the available documents.</p>
+          <a href="index.html?openStories=1&amp;story=02" class="it-slide-link mj-featured-link">Read this investigation <span aria-hidden="true">→</span></a>
+        </div><div class="it-slide-mark" aria-hidden="true">02</div>
+      </article>
+      <article class="it-slide" aria-hidden="true">
+        <div class="it-slide-image">
+          <img src="https://res.cloudinary.com/tvnnb7i2/image/upload/v1795500590/Rashtrapati_Bhavan__Past_Meets_Present.png" alt="Raisina Hill government avenue and press history" loading="lazy">
+          <span class="it-image-caption">MEETU JAIN • REPORTING SINCE 1993</span>
+        </div>
+        <div class="it-slide-copy">
+          <span class="it-slide-tag">2011 • Corporate Investigation</span>
+          <h2><a class="mj-featured-link" href="index.html?openStories=1&amp;story=03">Loop Telecom and Essar: Following the Hidden Ownership Trail</a></h2>
+          <p>Explore the investigation, its reporting record and the questions raised by the available documents.</p>
+          <a href="index.html?openStories=1&amp;story=03" class="it-slide-link mj-featured-link">Read this investigation <span aria-hidden="true">→</span></a>
+        </div><div class="it-slide-mark" aria-hidden="true">03</div>
+      </article>
+      <article class="it-slide" aria-hidden="true">
+        <div class="it-slide-image">
+          <img src="https://res.cloudinary.com/tvnnb7i2/image/upload/v1795500590/Rashtrapati_Bhavan__Past_Meets_Present.png" alt="Government district in New Delhi at sunset" loading="lazy">
+          <span class="it-image-caption">MEETU JAIN • REPORTING SINCE 1993</span>
+        </div>
+        <div class="it-slide-copy">
+          <span class="it-slide-tag">2011 • Offshore Investigation</span>
+          <h2><a class="mj-featured-link" href="index.html?openStories=1&amp;story=04">22 Unitech Companies, One Cyprus Address: The Offshore Trail in the 2G Probe</a></h2>
+          <p>Explore the investigation, its reporting record and the questions raised by the available documents.</p>
+          <a href="index.html?openStories=1&amp;story=04" class="it-slide-link mj-featured-link">Read this investigation <span aria-hidden="true">→</span></a>
+        </div><div class="it-slide-mark" aria-hidden="true">04</div>
+      </article>
+      <article class="it-slide" aria-hidden="true">
+        <div class="it-slide-image">
+          <img src="https://res.cloudinary.com/tvnnb7i2/image/upload/v1795500590/Rashtrapati_Bhavan__Past_Meets_Present.png" alt="Raisina Hill and the Indian government district" loading="lazy">
+          <span class="it-image-caption">MEETU JAIN • REPORTING SINCE 1993</span>
+        </div>
+        <div class="it-slide-copy">
+          <span class="it-slide-tag">2011 • Corporate Investigation</span>
+          <h2><a class="mj-featured-link" href="index.html?openStories=1&amp;story=05">Reliance and Swan: The Corporate Links Under the CBI’s 2G Scanner</a></h2>
+          <p>Explore the investigation, its reporting record and the questions raised by the available documents.</p>
+          <a href="index.html?openStories=1&amp;story=05" class="it-slide-link mj-featured-link">Read this investigation <span aria-hidden="true">→</span></a>
+        </div><div class="it-slide-mark" aria-hidden="true">05</div>
+      </article>
+    </div>
+    <div class="it-carousel-controls">
+      <div class="it-dots" role="group" aria-label="Choose story">
+        <button class="it-dot is-active" type="button" aria-label="Show story 1" aria-pressed="true"></button>
+        <button class="it-dot" type="button" aria-label="Show story 2" aria-pressed="false"></button>
+        <button class="it-dot" type="button" aria-label="Show story 3" aria-pressed="false"></button>
+        <button class="it-dot" type="button" aria-label="Show story 4" aria-pressed="false"></button>
+        <button class="it-dot" type="button" aria-label="Show story 5" aria-pressed="false"></button>
+      </div>
+      <div class="it-carousel-arrows">
+        <button type="button" class="it-prev" aria-label="Previous story">←</button>
+        <button type="button" class="it-next" aria-label="Next story">→</button>
+        <button type="button" class="it-pause" aria-label="Pause automatic highlights">Ⅱ</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATISTICS -->
+
+<section class="stats">
+    <div class="container stats-grid">
+
+        <div class="stat-item">
+            <h3>1993</h3>
+            <p>Archive Begins</p>
+        </div>
+
+        <div class="stat-item">
+            <h3>2026</h3>
+            <p>Historical Coverage Ends</p>
+        </div>
+
+        <div class="stat-item">
+            <h3>33+</h3>
+            <p>Years of Journalism</p>
+        </div>
+
+        <div class="stat-item">
+            <h3>∞</h3>
+            <p>Stories Worth Preserving</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- FEATURED STORIES -->
+
+
+
+
+<section class="section" id="featured">
+    <div class="container">
+
+        <div class="section-heading">
+            <div>
+                <div class="section-label">Reports, Records & Revelations</div>
+                <h2>The Evidence Room</h2>
+            </div>
+
+            <p>
+                Watch selected investigations, field reports and on-camera journalism. Each story opens its video report.
+            </p>
+        </div>
+
+        <div class="story-grid">
+
+            <a class="story-card mj-video-card" href="https://res.cloudinary.com/tvnnb7i2/video/upload/v1795253930/mj-001.mp4" data-video-file="https://res.cloudinary.com/tvnnb7i2/video/upload/v1795253930/mj-001.mp4" aria-label="Watch video: Following the Questions That Matter"><article class="mj-video-card-inner">
+                <div class="story-image story-one"></div>
+                <div class="story-content">
+                    <small>Political Investigation</small>
+                    <h3>Following the Questions That Matter</h3>
+                    <p>
+                        A space for selected investigations, source documents and reporting that examines decisions, institutions and accountability.
+                    </p>
+                </div>
+            </article></a>
+
+            <a class="story-card mj-video-card" href="https://res.cloudinary.com/tvnnb7i2/video/upload/v1795253917/mj-002.mp4" data-video-file="https://res.cloudinary.com/tvnnb7i2/video/upload/v1795253917/mj-002.mp4" aria-label="Watch video: Inside the Political News Cycle"><article class="mj-video-card-inner">
+                <div class="story-image story-two"></div>
+                <div class="story-content">
+                    <small>Political Reporting</small>
+                    <h3>Inside the Political News Cycle</h3>
+                    <p>
+                        Coverage and analysis from the political arena, presented with context and a focus on the public record.
+                    </p>
+                </div>
+            </article></a>
+
+            <a class="story-card mj-video-card" href="https://res.cloudinary.com/tvnnb7i2/video/upload/v1795253876/mj-005.mp4" data-video-file="https://res.cloudinary.com/tvnnb7i2/video/upload/v1795253876/mj-005.mp4" aria-label="Watch video: Reporting Across Every Platform"><article class="mj-video-card-inner">
+                <div class="story-image story-three"></div>
+                <div class="story-content">
+                    <small>Television & Digital</small>
+                    <h3>Reporting Across Every Platform</h3>
+                    <p>
+                        Browse television appearances, digital stories and published work in one organised archive.
+                    </p>
+                </div>
+            </article></a>
+
+        </div>
+    </div>
+</section>
+
+<!-- VIDEO LIBRARY: ADD YOUR OWN REPORTING VIDEOS -->
+<section class="mj-video-library section" id="videos">
+  <div class="container">
+    <div class="section-heading">
+      <div><div class="section-label">Watch the reporting</div><h2>Video Reports & Investigations</h2></div>
+      <p>Selected video reports and investigations from the supplied video archive. Play each report here or open its original video file.</p>
+    </div>
+    <div class="mj-media-tools mj-video-tools"><input id="mj-video-search" type="search" placeholder="Search video reports…" aria-label="Search video reports"><select id="mj-video-sort" aria-label="Sort video reports"><option value="newest">Newest first</option><option value="oldest">Oldest first</option><option value="az">Name A–Z</option></select></div>
+    <div class="mj-video-grid" id="mj-video-report-grid" aria-live="polite">
+      <p class="mj-media-empty">Loading video reports…</p>
+    </div>
+    <p class="mj-video-upload-note"><strong>Video archive:</strong> The videos listed here are loaded from the supplied Cloudinary video index. Each report includes an in-page player and a link to open the original video.</p>
+  </div>
+</section>
+
+
+<!-- ARCHIVE -->
+
+
+
+<!-- JOURNALISTS -->
+
+
+
+<!-- EXHIBITIONS -->
+
+
+
+<!-- RESEARCH -->
+
+
+
+<!-- MEDIA LIBRARY: ADD FILES TO ASSETS/MEDIA -->
+<section class="mj-media-library section" id="media-library">
+  <div class="container">
+    <div class="section-heading mj-media-heading">
+      <div><div class="section-label">The reporting collection</div><h2>Photos, Documents & More</h2></div>
+      <p>Browse photographs and original documents from the reporting archive. Video reports are presented in their own dedicated section below.</p>
+    </div>
+    <div class="mj-media-tools" aria-label="Search media archive">
+      <input id="mj-media-search" type="search" placeholder="Search photographs and documents…" aria-label="Search photographs and documents">
+      <select id="mj-media-sort" aria-label="Sort media"><option value="newest">Newest first</option><option value="oldest">Oldest first</option><option value="az">Name A–Z</option></select>
+    </div>
+    <div class="mj-media-tabs" role="tablist" aria-label="Media types">
+      <button type="button" class="active" data-media-tab="images">Photographs</button>
+      <button type="button" data-media-tab="pdfs">Documents & PDFs</button>
+    </div>
+    <div class="mj-media-grid" id="mj-media-grid" aria-live="polite">
+      <p class="mj-media-empty">Add file names to media-manifest.json to display your uploaded media here.</p>
+    </div>
+  </div>
+</section>
+<!-- ABOUT -->
+<section class="section about mj-about-feature" id="about">
+  <div class="container mj-about-layout">
+    <div class="mj-about-portrait" role="img" aria-label="Reserved space for Meetu Jain's portrait">
+      <div class="mj-portrait-placeholder">
+        <span class="mj-portrait-monogram">MJ</span>
+        <strong>MEETU JAIN</strong>
+        <small>PORTRAIT PHOTOGRAPH</small>
+        
+      </div>
+      <div class="mj-portrait-caption">THE REPORTER • THE WITNESS • THE STORY</div>
+    </div>
+    <div class="mj-about-copy">
+      <div class="section-label">A life in political journalism</div>
+      <p class="mj-about-kicker">1993 — PRESENT</p>
+      <h2>More than three decades. One enduring vantage point: Raisina Hill.</h2>
+      <p class="mj-about-lead">Meetu Jain began her reporting journey in 1993. Since then, journalism has taken her through changing governments, political turning points and the stories that shape public life.</p>
+      <p>Raisina Hill has been more than a dateline. It has been a front-row vantage point on the institutions, decisions and people at the centre of India's public life. Over the years, nearly half of her life has been spent reporting from this political landscape — observing power, following questions and documenting the moments that matter.</p>
+      <p>This website brings that body of work together: a living archive of reporting across print, television and digital platforms, preserving the stories and the record behind them.</p>
+      <div class="mj-about-signoff"><span class="mj-about-rule"></span><span>Reporting since 1993</span></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- STORY THAT EVERYONE SHOULD KNOW: 10-STORY READING ROOM -->
+<div class="mj-stories-overlay" id="mj-stories-overlay" aria-hidden="true">
+  <section class="mj-stories-dialog" role="dialog" aria-modal="true" aria-labelledby="mj-stories-title">
+    <header class="mj-stories-header">
+      <div>
+        <p class="mj-stories-eyebrow">MEETU JAIN • INVESTIGATIVE REPORTING</p>
+        <h2 id="mj-stories-title">Stories That Everyone Should Know</h2>
+        <p>Ten selected stories, presented in a clean, easy-to-read format.</p>
+      </div>
+      <button type="button" class="mj-stories-close" id="mj-stories-close" aria-label="Close stories">×</button>
+    </header>
+    <div class="mj-stories-content">
+      <aside class="mj-stories-list" id="mj-stories-list" aria-label="Select a story"></aside>
+      <article class="mj-story-reader" id="mj-story-reader" aria-live="polite">
+        <div class="mj-reader-placeholder">
+          <span class="mj-reader-number">01 — 10</span>
+          <h3>Select a story to begin reading</h3>
+          <p>Choose any of the ten stories from the list. Each article opens here in a comfortable reading layout.</p>
+        </div>
+      </article>
+    </div>
+    <footer class="mj-stories-footer">
+      <span>Independent journalism • Public-interest reporting</span>
+      <span>Use the story list to move between articles</span>
+    </footer>
+  </section>
+</div>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer class="mj-footer">
+  <div class="container">
+    <div class="mj-footer-grid">
+      <div class="mj-footer-brand">
+        <div class="footer-logo">MEETU <span>JAIN.</span></div>
+        <p>Independent Political Journalist<br>Investigative Reporter • Reporting since 1993</p>
+        <p class="mj-footer-note">Independent journalism. Public-interest questions. Stories grounded in the record.</p>
+      </div>
+      <div class="footer-column"><h4>Explore</h4>
+        <a href="index.html">Home</a><a href="index.html#about">About Meetu Jain</a><a href="index.html#featured">The Evidence Room</a><a href="index.html#videos">Watch the Reporting</a>
+      </div>
+      <div class="footer-column"><h4>Published Work</h4>
+        <a href="archive.html?channel=print">Print</a><a href="archive.html?channel=television">Television</a><a href="social.html">Digital & Social Media</a>
+      </div>
+      <div class="footer-column"><h4>Connect</h4>
+        <div class="mj-footer-social">
+          <a href="https://x.com/meetujain" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter"><span>𝕏</span> X / Twitter</a>
+          <a href="https://www.instagram.com/meetujainofficial/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><span>◎</span> Instagram</a>
+          <a href="https://www.linkedin.com/in/meetu-jain-00b652240/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><span>in</span> LinkedIn</a>
+          <a class="mj-email-link" href="mailto:meetujain@protonmail.com"><span>✉</span> Email</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="mj-current-year">2026</span> Meetu Jain. All rights reserved.</span><span>Independent Political Journalism</span></div>
+  </div>
+</footer>
+
+<!-- Independent story submission assistant -->
+<div class="mj-story-chat" id="share-story">
+  <button class="mj-chat-launch" id="mj-chat-launch" type="button" aria-expanded="false" aria-controls="mj-chat-panel">
+    <span class="mj-chat-launch-icon">✉</span><span>Share a Story</span>
+  </button>
+  <section class="mj-chat-panel" id="mj-chat-panel" aria-label="Share your story with Meetu Jain" hidden>
+    <div class="mj-chat-head"><div><strong>Talk to the Investigative Desk</strong><small>Share a lead, concern or story idea</small></div>
+      <button type="button" id="mj-chat-close" aria-label="Close chat">×</button></div>
+    <div class="mj-chat-messages" id="mj-chat-messages" aria-live="polite">
+      <div class="mj-chat-bubble mj-bot">Hello. Thank you for reaching out. What would you like Meetu Jain to know?</div>
+      <div class="mj-chat-bubble mj-bot">Please do not send confidential, legally privileged or immediately dangerous information through this form. We cannot promise confidentiality or a response.</div>
+    </div>
+    <form id="mj-story-form" class="mj-chat-form">
+      <label>Your name<input name="name" autocomplete="name" required placeholder="Your name"></label>
+      <label>Your email<input name="email" type="email" autocomplete="email" required placeholder="you@example.com"></label>
+      <label>What is your story about?<textarea name="story" rows="4" required placeholder="Briefly describe the issue, people or events involved..."></textarea></label>
+      <label>How can we follow up? <input name="contact" placeholder="Optional phone number or preferred contact"></label>
+      <button type="submit">Continue to email <span>↗</span></button>
+      <p>Your email app will open with your message addressed to the newsroom. You will review and send it yourself.</p>
+    </form>
+  </section>
+</div>
+<script src="site-config.js"></script>
+<script src="featured-stories.js"></script>
+<script src="media-manifest.js"></script>
+  <script src="solo-reporter.js"></script><script src="publication-data.js"></script><script src="site-search.js"></script>
+
+<script>
+// Show a clear message when a video file is missing or cannot be decoded.
+document.querySelectorAll('.mj-report-video').forEach(function(video) {
+  const message = video.parentElement.querySelector('.mj-video-error');
+  video.addEventListener('error', function() {
+    if (message) message.hidden = false;
+  });
+  video.addEventListener('loadedmetadata', function() {
+    if (message) message.hidden = true;
+  });
+});
+</script>
+</body>
+</html>
